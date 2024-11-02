@@ -5,7 +5,7 @@ import { lang } from "./state";
 </script>
 
 <template>
-  <div class="cont">
+  <div class="cont text">
     <Head></Head>
     <Desarrollo></Desarrollo>
     <footer
@@ -80,5 +80,20 @@ import { lang } from "./state";
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+.text {
+  animation: fade 1s ease forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

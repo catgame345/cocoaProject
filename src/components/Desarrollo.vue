@@ -190,5 +190,24 @@ import Services from "./Services.vue";
     </div>
 
     <Services></Services>
+
+    <div class="border border-teal-700 bg-teal-500 dark:border-teal-800 dark:bg-teal-600 pb-5 mb-10 mx-20 mt-10 rounded-full pt-2">
+      <h2 class="text-4xl mb-10 mt-10 text-white text-center font-bold">
+        <span v-if="lang == 1">Videos:</span>
+        <span v-if="lang == 2">Videos:</span>
+        <span v-if="lang == 3">Vidéos:</span>
+        <span v-if="lang == 4">ビデオ:</span>
+      </h2>
+      <div class="flex items-center justify-center h-screen">
+        <video width="350px" height="250px" controls class="mr-5">
+          <source src="../assets/VID_20241114_091400.mp4" type="video/mp4">
+          Su navegador no soporta videos en HTML5
+        </video>
+        <video width="350px" height="250px" controls>
+          <source src="../assets/VID_20241114_091530.mp4" type="video/mp4">
+          Su navegador no soporta videos en HTML5
+        </video>
+      </div>
+    </div>
   </main>
 </template>

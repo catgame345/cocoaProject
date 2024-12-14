@@ -209,5 +209,30 @@ import Services from "./Services.vue";
         </video>
       </div>
     </div>
+
+    <div class="border border-teal-700 bg-teal-500 dark:border-teal-800 dark:bg-teal-600 pb-5 mb-10 mx-20 mt-10 rounded-full pt-2">
+      <h2 class="text-4xl mb-10 mt-10 text-white text-center font-bold">
+        <span v-if="lang == 1">Infografías:</span>
+        <span v-if="lang == 2">Infographics:</span>
+        <span v-if="lang == 3">Infographie:</span>
+        <span v-if="lang == 4">インフォグラフィクス:</span>
+      </h2>
+      <div class="flex items-center justify-center">
+        <img 
+        src="https://www.dropbox.com/scl/fi/ctlg0w30qfaast3i3u6xh/Partes-Rotor-Generador-Torre-Sistema-de-Control.png?rlkey=ns2auobcvaeopwe0cdhpi9d71&st=78jrcmbo&raw=1"
+        alt="infographic"
+        height="30%"
+        width="30%"
+        class="rounded-full" />
+      </div>
+      <div class="text-center">
+        <a href="https://www.dropbox.com/scl/fi/ctlg0w30qfaast3i3u6xh/Partes-Rotor-Generador-Torre-Sistema-de-Control.png?rlkey=ns2auobcvaeopwe0cdhpi9d71&st=78jrcmbo&dl=0" class="text-xl text-indigo-950">
+          <span v-if="lang == 1">Enlace a la infografía</span>
+          <span v-if="lang == 2">Link to infographic</span>
+          <span v-if="lang == 3">lien vers l'infographie</span>
+          <span v-if="lang == 4">インフォグラフィックヘのリンク</span>
+        </a>
+      </div>
+    </div>
   </main>
 </template>
